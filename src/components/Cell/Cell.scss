@@ -1,0 +1,11 @@
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid deeppink;
+  box-sizing: border-box;
+  transition: .2s;
+  &:hover {
+    background-color: darken(#f9ffb5, 10%);
+    cursor: pointer;
+  }
+}

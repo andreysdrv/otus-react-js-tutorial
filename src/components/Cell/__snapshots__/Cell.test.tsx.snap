@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cell snapshot tests base snapshot 1`] = `
+<div>
+  <div
+    class="cell"
+  >
+    1
+  </div>
+</div>
+`;
+
+exports[`Cell snapshot tests some data snapshot 1`] = `
+<div>
+  <div
+    class="cell"
+  >
+    1
+  </div>
+</div>
+`;

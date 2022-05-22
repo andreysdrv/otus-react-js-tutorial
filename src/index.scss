@@ -1,0 +1,13 @@
+$test: #68499b;
+
+body {
+  color: $test;
+}
+
+.page-wrap {
+  display: flex;
+}
+
+.page-wrap::placeholder {
+  color: red;
+}
