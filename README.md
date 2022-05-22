@@ -1,1 +1,2 @@
-# otus-react-js-tutorial
+# Консольный калькулятор
+## Webpack + babel + typescript базовая настройка. 
