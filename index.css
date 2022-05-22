@@ -1,0 +1,4 @@
+.cell{width:100px;height:100px;border:1px solid #ff1493;box-sizing:border-box;transition:.2s}.cell:hover{background-color:#f5ff82;cursor:pointer}
+.field{background-color:#f9ffb5;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+
+/*# sourceMappingURL=index.css.map*/
