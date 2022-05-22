@@ -1,0 +1,29 @@
+{
+  "name": "fixme",
+  "version": "1.0.0",
+  "repository": "git@github.com:andreysdrv/otus-react-js-tutorial.git",
+  "author": "andreysdrv <jeck666@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "2.6.2",
+    "typescript": "^4.6.4"
+  },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --cache --fix",
+    "*.{ts,js,json}": "prettier --write"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "test": "echo \"No test specified\" && exit 0",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "tsc": "tsc"
+  }
+}
