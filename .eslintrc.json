@@ -17,6 +17,8 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "newline-per-chained-call": "error",
+    "newline-before-return": "error"
   }
 }
