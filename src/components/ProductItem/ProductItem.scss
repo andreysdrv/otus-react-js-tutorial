@@ -1,0 +1,20 @@
+.list__item {
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &-title {
+    display: block;
+    font-size: 32px;
+    transition: .2s;
+    &:hover {
+      cursor: pointer;
+      opacity: .75;
+      background-color: cornflowerblue;
+    }
+    &_completed {
+      text-decoration: line-through;
+    }
+  }
+}
