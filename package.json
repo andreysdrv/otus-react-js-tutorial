@@ -22,7 +22,9 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "lint": "eslint ./",
-    "lint:fix": "eslint ./ --fix"
+    "lint:fix": "eslint ./ --fix",
+    "sb": "start-storybook -p 6006 -s public",
+    "build-sb": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -37,18 +39,60 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.5.7",
+    "@storybook/addon-essentials": "^6.5.7",
+    "@storybook/addon-interactions": "^6.5.7",
+    "@storybook/addon-links": "^6.5.7",
+    "@storybook/builder-webpack5": "^6.5.7",
+    "@storybook/manager-webpack5": "^6.5.7",
+    "@storybook/node-logger": "^6.5.7",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.7",
+    "@storybook/testing-library": "^0.0.11",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.0",
+    "loki": "^0.30.2",
     "prettier": "^2.6.2",
-    "typescript": "^4.7.2"
+    "prop-types": "^15.8.1",
+    "sass": "^1.52.2",
+    "typescript": "^4.7.2",
+    "webpack": "^5.73.0"
   },
   "lint-staged": {
     "*.{ts,js}": "eslint --cache --fix",
     "*.{ts,js,json}": "prettier --write"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }

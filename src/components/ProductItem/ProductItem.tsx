@@ -25,7 +25,7 @@ export class ProductItem extends Component<
 
   render() {
     return (
-      <li className={"list__item"}>
+      <li data-testid="item" className={"list__item"}>
         <label
           className={`list__item-title ${
             this.state.completed ? "list__item-title_completed" : ""

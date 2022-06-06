@@ -7,7 +7,7 @@ import MOCK_PRODUCTS_LIST from "../../utils/_ProductsList.json";
 import { IProduct, IProducts } from "../../types/types";
 import { AddForm } from "../AddForm";
 
-export default class App extends Component<
+export class App extends Component<
   Record<string, never>,
   { products: IProduct[]; inputVal: string }
 > {

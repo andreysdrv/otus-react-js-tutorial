@@ -18,7 +18,7 @@ export class List<T> extends Component<ListProps<T>> {
 
   render() {
     return (
-      <ul className={`list ${this.props.className}`}>
+      <ul data-testid="list" className={`list ${this.props.className}`}>
         {this.props.items.map(this.props.renderItem)}
       </ul>
     );
