@@ -7,6 +7,10 @@ type MainProps = {
 
 export class Main extends Component<MainProps> {
   render() {
-    return <main className={"main"}>{this.props.children}</main>;
+    return (
+      <main data-testid="main" className={"main"}>
+        {this.props.children}
+      </main>
+    );
   }
 }
