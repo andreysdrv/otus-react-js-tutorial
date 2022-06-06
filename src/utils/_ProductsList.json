@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Meat",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Apple",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Milk",
+      "completed": true
+    }
+  ]
+}
